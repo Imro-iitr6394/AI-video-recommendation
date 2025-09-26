@@ -1,5 +1,24 @@
 # AI Video Recommendation System
 
+## Project Structure
+
+```
+video-recommendation-engine/
+│
+├── app/
+│   ├── __init__.py
+│   ├── db.py
+│   ├── main.py
+│   ├── recommender.py
+│
+├── requirements.txt
+├── README.md
+├── docs/
+│   └── system_overview.md
+└── Video-Recommendation.postman_collection.json
+
+--
+
 ## Introduction
 
 Hi, I'm Rohit Yadav. This repository contains my submission for the Video Recommendation Assignment. I have built a backend API that provides personalized video recommendations using FastAPI. The project demonstrates key concepts like recommendation algorithms, handling cold start problems, integration with external APIs, and is ready for deployment.
