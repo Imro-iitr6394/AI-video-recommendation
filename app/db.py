@@ -1,14 +1,24 @@
+"""
+db.py: Simple in-memory demo database for users, videos, and user interactions.
+"""
+
 users = {}
 videos = {}
 interactions = []
 
 def init_db():
+    """
+    Initializes the in-memory database (for demo purpose).
+    """
     global users, videos, interactions
     users = {}
     videos = {}
     interactions = []
 
 def insert_demo_data():
+    """
+    Inserts sample demo data for users, videos, and interactions.
+    """
     global users, videos, interactions
     users = {"rohit": {}, "alice": {}, "bob": {}}
     videos = {
