@@ -1,13 +1,21 @@
+"""
+recommender.py: Contains recommendation logic for the video recommendation system.
+"""
+
 from app import db
 
 def get_recommendations(username, project_code=None):
+    """
+    Returns personalized video recommendations for a user.
+    If project_code is provided, recommendations are filtered by category.
+    """
     if username not in db.users:
         raise Exception("User not found")
 
-    # Get videos the user already watched
+    # Videos already watched by the user
     watched = {i["video_id"] for i in db.interactions if i["user"] == username}
 
-    # Simple recommendation: suggest unwatched videos
+    # Recommend unwatched videos, optionally filtered by category
     recs = []
     for vid, info in db.videos.items():
         if vid not in watched:
