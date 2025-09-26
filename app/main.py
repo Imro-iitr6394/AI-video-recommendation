@@ -3,6 +3,10 @@ from app import db, recommender
 
 app = FastAPI()
 
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to AI Video Recommendation!"}
+
 @app.on_event("startup")
 def startup():
     db.init_db()
