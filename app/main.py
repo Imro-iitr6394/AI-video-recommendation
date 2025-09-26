@@ -24,7 +24,7 @@ def startup():
     """
     db.init_db()
 
-@app.post("/init_demo")
+@app.get("/init_demo")
 def init_demo():
     """
     Populates the demo database with test users, videos, and interactions.
