@@ -110,25 +110,6 @@ Detailed explanation of the recommendation algorithm and design decisions is ava
 
 ---
 
-## Submission Checklist
 
-- [x] All APIs functional
-- [x] Database migrations work correctly
-- [x] README is complete and clear
-- [x] Postman collection is included
-- [x] Videos are submitted
-- [x] Code is well-documented
-- [x] Handles edge cases and errors properly
 
----
 
-## Contact & Notification
-
-- Joined the Video Recommendation Telegram group.
-- Will notify upon completion.
-
----
-
-## License
-
-MIT
